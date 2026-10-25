@@ -10,9 +10,7 @@ django-sendgrid-v5
 django-storages==1.12.3
 gunicorn==20.1.0
 jmespath==1.0.0
-mysqlclient==2.1.0
-psycopg2==2.9.3
-psycopg2-binary==2.9.3
+psycopg2-binary
 python-dateutil==2.8.2
 python-dotenv==0.20.0
 python-http-client==3.3.7
