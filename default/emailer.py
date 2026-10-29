@@ -196,8 +196,7 @@ initial_notification_message = """
 We're excited to announce that registration for HackTCNJ is now open! We know you've been patiently waiting, and we appreciate your enthusiasm for our Hackathon. 
 
 Hackathon Details:
-    - Start Time: {}
-    - End Time: {}
+    - When: {}
     - Location: {}
 
 How to Register:
@@ -212,7 +211,7 @@ Why should you attend HackTCNJ?:
 Don't forget to spread the word to your friends and teammates!
 
 If you have any questions or need assistance with the registration process, feel free to reply to this email or contact our support team at contact@hacktcnj.com !
-""".format(start_time, end_time, location)    
+""".format(start_time, location)    
 
 def send_initial_notification():
     users = WaitingList.objects.all()
@@ -235,7 +234,7 @@ reminder_notification_message = """
 We hope this message finds you in good spirits for the HackTCNJ! 
 
 Hackathon Details:
-    - Date and Time: {} until {}
+    - When: {}
     - Location: {}
 
 How to Register:
@@ -255,7 +254,7 @@ Final Checklist:
     4. Review the Schedule: Familiarize yourself with the event schedule to make the most of your experience.
 
 If you have any questions or need assistance with the registration process, feel free to reply to this email or contact our support team at contact@hacktcnj.com !
-""".format(start_time, end_time, location)
+""".format(start_time, location)
         
 def send_reminder_notification():
     users = WaitingList.objects.all()
